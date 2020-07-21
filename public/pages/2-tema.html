@@ -1,0 +1,117 @@
+<div class="page-header theme-light mb-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <h3 class="curso-subtitulo" id="curso-titulo-componente">Módulos, estructura de almacenamiento y POO utilizando el lenguaje de programación C++ (Nivel II)</h3>
+                <h1 class="curso-titulo" id="curso-titulo-tema">Uso y declaración de funciones</h1>
+                <div class="brand-line-primary"></div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="d-none d-lg-block"><img class="img-fluid" src="assets/images/header/header_media.svg" style="max-width: 80%" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="variables">
+    <div class="header-ecored">
+        <h1>2. Variables</h1>
+    </div>
+    <div class="row mx-0 recuadro1">
+        <div class="col-12">
+            <p>Las variables son espacios de memoria donde se almacena la información requerida en la ejecución de un programa, pueden ser de diferentes tipos según los requerimientos de la aplicación, tales como: int, float, double, etc.</p>
+            <p>En el ámbito de las funciones se tiene en cuenta otra clasificación que consiste en la parte del programa donde las variables son declaradas y utilizadas, dicha clasificación se observa a continuación:</p>
+        </div>
+        <div class="col-12 text-center"><img class="mt-5 img-fluid" src="assets/images/pages/img11.svg" style="max-width: 100%" /></div>
+    </div><br id="globales" />
+    <div class="header-ecored">
+        <h2>2.1 Globales</h2>
+    </div>
+    <div class="row mx-0 recuadro1">
+        <div class="col-12">
+            <p class="m-0">Las variables globales son aquellas que se declaran por lo general al comienzo del programa y que por lo tanto son utilizadas y reconocidas en cualquier parte de este; pueden ser además modificadas sin importar desde qué zona del código se esté haciendo mención a ellas.</p>
+        </div>
+    </div><br />
+    <div class="row mx-0 recuadro1 p-2">
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img12.svg" style="max-width: 100%" /></div>
+        <div class="col-12">
+            <p>Las variables globales están definidas por fuera de cualquier función, normalmente después de las líneas que contienen las librerías y de este modo son reconocidas en cualquier ámbito del programa; es decir, por cualquier función que las quiera utilizar, ya sea para lectura o escritura o para cualquier tipo de operación que requiera la solución al problema computacional.</p>
+        </div>
+    </div><br />
+    <div class="row mx-0 recuadro1 p-2">
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img13.svg" style="max-width: 100%" /></div>
+        <div class="col-12 p-3"><img class="img-fluid" src="assets/images/pages/img14.svg" style="max-width: 100%" /></div>
+        <div class="col-12">
+            <p>Este tipo de variables presta al programador utilidad porque permite definir información que sea requerida por cualquiera de las funciones del programa; es decir, que sea común a estas y que teniendo en cuenta las tareas que se programarán sean datos que deben emplearse en varias partes y de este modo se minimizan las líneas de código y se evita la redundancia al definir una variable que quizás almacenará la misma información en partes diferentes, ya que ello ocasionaría uso innecesario de memoria.</p>
+        </div>
+    </div><br />
+    <div class="row mx-0 recuadro1 p-2">
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img15.svg" style="max-width: 100%" /></div>
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img16.svg" style="max-width: 100%" /></div>
+        <div class="col-12">
+            <p>En el código anterior, después de las librerías se declaran las variables de tipo entero numero1 y numero2, dichas variables no se encuentran dentro de ninguna función, por lo tanto se trata de variables globales que son accesibles desde cualquier función en el programa.</p>
+            <p>También sería posible encontrarse con un código similar al siguiente:</p>
+        </div>
+        <div class="col-12"><img class="img-fluid" src="assets/images/pages/img17.svg" style="max-width: 100%" /></div>
+        <div class="col-12 my-3"><img class="img-fluid" src="assets/images/pages/img18.svg" style="max-width: 100%" /></div>
+        <div class="col-12">
+            <p>En el código anterior se tienen dos variables globales llamadas numero1 y numero2 que son accesibles desde todas las funciones (main, funcion1, funcion2 y funcion3) y adicional a ello, se tiene otra variable global de tipo entero llamada cantidades. Esta únicamente es accesible por la función3 y sería accesible por las demás funciones que se encuentren declaradas debajo de esta.</p>
+        </div>
+        <div class="row mx-0 recuadro2 align-items-center my-3">
+            <div class="col-2 text-center p-2"><img class="img-fluid" src="assets/images/pages/img19.svg" style="max-width: 100%" /></div>
+            <div class="col-10 p-2">
+                <p class="m-0">Una variable global entonces es accesible por cualquier función del programa siempre y cuando se encuentre declarada antes de dicha función, por ello este tipo de variables suelen ser declaradas al comienzo del código, por lo general después de las librerías.</p>
+            </div>
+        </div>
+    </div><br id="locales" />
+    <div class="header-ecored">
+        <h2>2.2 Locales</h2>
+    </div>
+    <div class="row mx-0 recuadro1">
+        <div class="col-12">
+            <p>Las variables locales son las que se definen y utilizan dentro del ámbito de una función; es decir, se declaran e inicializan específicamente para cada función y es únicamente dicha función la que las reconoce y tiene acceso a las mismas.</p>
+            <p class="m-0">Si una variable local intenta ser utilizada en una función diferente a la que la declara por primera vez, el sistema genera un error dado que, como su nombre lo indica, la variable hace parte de la función localmente, dicha función es su propietaria y solo esta tiene permiso de accederla.</p>
+        </div>
+    </div><br />
+    <div class="row mx-0 recuadro1 p-2">
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img12.svg" style="max-width: 100%" /></div>
+        <div class="col-12">
+            <p>Las variables locales se definen dentro de las funciones, usualmente en las primeras líneas antes de cualquier otra instrucción, o bien, en la línea previa a su utilización.</p>
+        </div>
+    </div><br />
+    <div class="row mx-0 recuadro1 p-2">
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img13.svg" style="max-width: 100%" /></div>
+        <div class="col-12 p-3"><img class="img-fluid" src="assets/images/pages/img20.svg" style="max-width: 100%" /></div>
+        <div class="col-12">
+            <p>Las variables locales se definen dentro de las funciones, usualmente en las primeras líneas antes de cualquier otra instrucción, o bien, en la línea previa a su utilización.</p>
+        </div>
+    </div><br />
+    <div class="row mx-0 recuadro1 p-2">
+        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img15.svg" style="max-width: 100%" /></div>
+        <div class="col-12"><img class="img-fluid" src="assets/images/pages/img21.svg" style="max-width: 100%" /></div>
+        <div class="col-12 mt-3"><img class="img-fluid" src="assets/images/pages/img22.svg" style="max-width: 100%" /></div>
+        <div class="col-12 mt-3">
+            <p>En el código anterior se tiene una variable local llamada val1, ya que esta se encuentra definida dentro de la funcion1 y por lo tanto dicha función es su propietaria, es la única que tiene acceso a ella y por ende la única que puede manipular su valor.</p>
+            <p class="m-0">En cuanto a variables locales, se pueden encontrar en diferentes partes del código de una función, otra opción entonces sería la siguiente:</p>
+        </div>
+        <div class="col-12 mt-3"><img class="img-fluid" src="assets/images/pages/img23.svg" style="max-width: 100%" /></div>
+        <div class="row mx-0 recuadro2 align-items-center my-4">
+            <div class="col-2 text-center p-2"><img class="img-fluid" src="assets/images/pages/img24.svg" style="max-width: 100%" /></div>
+            <div class="col-10 p-2">
+                <p class="m-0">En el código presentado se observa la declaración de las variables par1 y par2, estas son conocidas como los parámetros de dicha función y también se entienden como variables locales, porque solamente serán reconocidas dentro de la función que se están utilizando.</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <p>Otra posibilidad está en las variables que se emplean dentro de los ciclos de repetición, estas también son variables locales; sin embargo, ya no son locales a la función como tal sino al ciclo de repetición; es decir, dentro del ciclo se crean y al finalizar el ciclo se rompen, es por ello que puede usarse la misma variable i en dos for diferentes cuando por ejemplo se solicitan por teclado y posteriormente se muestran los elementos de un arreglo.</p>
+        </div>
+        <div class="col-12"><img class="img-fluid" src="assets/images/pages/img25.svg" style="max-width: 100%" /></div>
+        <div class="col-12 mt-3">
+            <p>Como se ha mostrado, está el for con la variable i para solicitar al usuario los elementos del arreglo y después se observa el for también con la variable i para mostrar dichos elementos.</p>
+        </div>
+        <div class="row mx-0 recuadro2 align-items-center my-3">
+            <div class="col-2 text-center p-2"><img class="img-fluid" src="assets/images/pages/img26.svg" style="max-width: 100%" /></div>
+            <div class="col-10 p-2">
+                <p class="m-0">Para concluir, una variable local solamente es conocida dentro de la función que la crea y totalmente inaccesible por el resto del programa.</p>
+            </div>
+        </div>
+    </div>
+</div>

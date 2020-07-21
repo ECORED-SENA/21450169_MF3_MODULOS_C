@@ -1,0 +1,60 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },
+  {
+    "id":0,
+    "icon": "fa fa-play-circle",
+    "slug": "introduccion",
+    "title": "Introducción",
+    "breadcrumb": ["Inicio","introduccion"],
+    "path": "pages/intro.html"
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "funciones",
+    "title": "1. Funciones",
+    "breadcrumb": ["Inicio","funciones"],
+    "path": "pages/1-tema.html"  
+  },
+  { 
+    "id": 2,
+    "icon": "fa fa-file-text",
+    "slug": "variables",
+    "title": "2. Variables",
+    "breadcrumb": ["Inicio","variables"],
+    "path": "pages/2-tema.html",
+    "submenu": [
+      {
+        "icon": "fa fa-file-text",
+        "slug": "variables",
+        "title": "2.1 Globales",
+        "anchor": "globales"
+      },   
+      {
+        "icon": "fa fa-play-circle",
+        "slug": "variables",
+        "title": "2.2 Locales",
+        "anchor": "locales"
+      }
+    ]
+  },
+  { 
+    "id": 3,
+    "icon": "fa fa-file-text",
+    "slug": "ejercicios",
+    "title": "3. Ejercicios aplicando funciones",
+    "breadcrumb": ["Inicio","ejercicios"],
+    "path": "pages/3-tema.html"  
+  },
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "actividad-1",
+    "title": "Actividad didáctica",
+    "path": "pages/actividad-1.html"
+  }
+]
