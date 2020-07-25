@@ -7,7 +7,7 @@
   },
   {
     "id":0,
-    "icon": "fa fa-play-circle",
+    "icon": "fa fa-file-text",
     "slug": "introduccion",
     "title": "Introducción",
     "breadcrumb": ["Inicio","introduccion"],
@@ -34,9 +34,9 @@
         "slug": "variables",
         "title": "2.1 Globales",
         "anchor": "globales"
-      },   
+      },
       {
-        "icon": "fa fa-play-circle",
+        "icon": "fa fa-file-text",
         "slug": "variables",
         "title": "2.2 Locales",
         "anchor": "locales"
