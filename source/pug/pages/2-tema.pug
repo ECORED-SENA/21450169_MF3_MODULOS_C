@@ -10,9 +10,12 @@
 
         .col-12
 
-            p Las variables son espacios de memoria donde se almacena la información requerida en la ejecución de un programa, pueden ser de diferentes tipos según los requerimientos de la aplicación, tales como: int, float, double, etc.
+            p Las variables son espacios de memoria donde se almacena la información requerida en la ejecución de un programa, pueden ser de diferentes tipos según los requerimientos de la aplicación, tales como: 
+                b
+                    i int, float, double, 
+                | etc.
 
-            p En el ámbito de las funciones se tiene en cuenta otra clasificación que consiste en la parte del programa donde las variables son declaradas y utilizadas, dicha clasificación se observa a continuación:
+            p En el ámbito de las funciones se tiene en cuenta otra clasificación, que consiste en la parte del programa donde las variables son declaradas y utilizadas; dicha clasificación se observa a continuación:
 
         .col-12.text-center
 
@@ -28,7 +31,7 @@
 
         .col-12
 
-            p.m-0 Las variables globales son aquellas que se declaran por lo general al comienzo del programa y que por lo tanto son utilizadas y reconocidas en cualquier parte de este; pueden ser además modificadas sin importar desde qué zona del código se esté haciendo mención a ellas.
+            p.m-0 Las variables globales son aquellas que se declaran, por lo general, al comienzo del programa, y que por lo tanto son utilizadas y reconocidas en cualquier parte de este; pueden ser además modificadas sin importar desde qué zona del código se esté haciendo mención a ellas.
     
     br
 
@@ -40,7 +43,7 @@
         
         .col-12
 
-            p Las variables globales están definidas por fuera de cualquier función, normalmente después de las líneas que contienen las librerías y de este modo son reconocidas en cualquier ámbito del programa; es decir, por cualquier función que las quiera utilizar, ya sea para lectura o escritura o para cualquier tipo de operación que requiera la solución al problema computacional.
+            p Las variables globales están definidas por fuera de cualquier función, normalmente después de las líneas que contienen las librerías y de este modo son reconocidas en cualquier ámbito del programa, es decir, por cualquier función que las quiera utilizar, ya sea para lectura o escritura o para cualquier tipo de operación que requiera la solución al problema computacional.
     
     br
 
@@ -56,7 +59,7 @@
         
         .col-12
 
-            p Este tipo de variables presta al programador utilidad porque permite definir información que sea requerida por cualquiera de las funciones del programa; es decir, que sea común a estas y que teniendo en cuenta las tareas que se programarán sean datos que deben emplearse en varias partes y de este modo se minimizan las líneas de código y se evita la redundancia al definir una variable que quizás almacenará la misma información en partes diferentes, ya que ello ocasionaría uso innecesario de memoria.
+            p Este tipo de variables presta al programador utilidad porque permite definir información que sea requerida por cualquiera de las funciones del programa; es decir, que sea común a estas y que teniendo en cuenta las tareas que se programarán, sean datos que deben emplearse en varias partes y de este modo se minimizan las líneas de código y se evita la redundancia al definir una variable que quizás almacenará la misma información en partes diferentes, ya que ello ocasionaría uso innecesario de memoria.
 
     br
 
@@ -72,7 +75,7 @@
 
         .col-12
 
-            p En el código anterior, después de las librerías se declaran las variables de tipo entero numero1 y numero2, dichas variables no se encuentran dentro de ninguna función, por lo tanto se trata de variables globales que son accesibles desde cualquier función en el programa.
+            p En el código anterior, después de las librerías se declaran las variables de tipo entero numero1 y numero2, dichas variables no se encuentran dentro de ninguna función, por lo tanto, se trata de variables globales que son accesibles desde cualquier función en el programa.
 
             p También sería posible encontrarse con un código similar al siguiente:
 
@@ -86,7 +89,7 @@
 
         .col-12
 
-            p En el código anterior se tienen dos variables globales llamadas numero1 y numero2 que son accesibles desde todas las funciones (main, funcion1, funcion2 y funcion3) y adicional a ello, se tiene otra variable global de tipo entero llamada cantidades. Esta únicamente es accesible por la función3 y sería accesible por las demás funciones que se encuentren declaradas debajo de esta.
+            p En el código anterior se tienen dos variables globales, llamadas numero1 y numero2, que son accesibles desde todas las funciones (main, funcion1, funcion2 y funcion3) y adicional a ello, se tiene otra variable global de tipo entero llamada cantidades. Esta únicamente es accesible por la función3 y sería accesible por las demás funciones que se encuentren declaradas debajo de esta.
 
         .row.mx-0.recuadro2.align-items-center.my-3
 
@@ -96,7 +99,7 @@
 
             .col-10.p-2
 
-                p.m-0 Una variable global entonces es accesible por cualquier función del programa siempre y cuando se encuentre declarada antes de dicha función, por ello este tipo de variables suelen ser declaradas al comienzo del código, por lo general después de las librerías.
+                p.m-0 Una variable global entonces es accesible por cualquier función del programa, siempre y cuando se encuentre declarada antes de dicha función, por ello este tipo de variables suelen ser declaradas al comienzo del código, por lo general después de las librerías.
 
     br#locales
 
@@ -110,7 +113,7 @@
 
             p Las variables locales son las que se definen y utilizan dentro del ámbito de una función; es decir, se declaran e inicializan específicamente para cada función y es únicamente dicha función la que las reconoce y tiene acceso a las mismas.
 
-            p.m-0 Si una variable local intenta ser utilizada en una función diferente a la que la declara por primera vez, el sistema genera un error dado que, como su nombre lo indica, la variable hace parte de la función localmente, dicha función es su propietaria y solo esta tiene permiso de accederla.
+            p.m-0 Si una variable local intenta ser utilizada en una función diferente a la que la declara por primera vez, el sistema genera un error, dado que, como su nombre lo indica, la variable hace parte de la función localmente, dicha función es su propietaria y sólo esta tiene permiso de accederla.
 
     br
 
@@ -138,7 +141,7 @@
         
         .col-12
 
-            p Las variables locales se definen dentro de las funciones, usualmente en las primeras líneas antes de cualquier otra instrucción, o bien, en la línea previa a su utilización.
+            p El uso de variables locales en la definición de funciones es inminente, debido a que estas son las que permiten al programa almacenar la información que hace posible la ejecución de la tarea para la cual cada función es creada.
 
     br
 
@@ -160,7 +163,7 @@
 
             p En el código anterior se tiene una variable local llamada val1, ya que esta se encuentra definida dentro de la funcion1 y por lo tanto dicha función es su propietaria, es la única que tiene acceso a ella y por ende la única que puede manipular su valor.
 
-            p.m-0 En cuanto a variables locales, se pueden encontrar en diferentes partes del código de una función, otra opción entonces sería la siguiente:
+            p.m-0 En cuanto a variables locales, se pueden encontrar en diferentes partes del código de una función; otra opción entonces sería la siguiente:
 
         .col-12.mt-3
 
@@ -178,7 +181,10 @@
 
         .col-12
 
-            p Otra posibilidad está en las variables que se emplean dentro de los ciclos de repetición, estas también son variables locales; sin embargo, ya no son locales a la función como tal sino al ciclo de repetición; es decir, dentro del ciclo se crean y al finalizar el ciclo se rompen, es por ello que puede usarse la misma variable i en dos for diferentes cuando por ejemplo se solicitan por teclado y posteriormente se muestran los elementos de un arreglo.
+            p Otra posibilidad está en las variables que se emplean dentro de los ciclos de repetición, estas también son variables locales; sin embargo, ya no son locales a la función como tal sino al ciclo de repetición; es decir, dentro del ciclo se crean y al finalizar del ciclo se rompen, es por ello que puede usarse la misma variable i en dos 
+                b
+                    i for 
+                | diferentes, cuando por ejemplo se solicitan por teclado y posteriormente se muestran los elementos de un arreglo.
 
         .col-12
 
@@ -186,7 +192,11 @@
 
         .col-12.mt-3
 
-            p Como se ha mostrado, está el for con la variable i para solicitar al usuario los elementos del arreglo y después se observa el for también con la variable i para mostrar dichos elementos.
+            p Como se ha mostrado, está el 
+                i for 
+                | con la variable i para solicitar al usuario los elementos del arreglo y después se observa el 
+                i for 
+                | también con la variable i para mostrar dichos elementos.
 
         .row.mx-0.recuadro2.align-items-center.my-3
 
